@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebQRScanner</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WebQRScanner</h1>
+        <div class="buttons">
+            <button id="capture-btn" class="primary-btn">
+                <span class="icon">📸</span>
+                Select Area to Scan
+            </button>
+        </div>
+        <div id="preview-container" class="hidden">
+            <img id="image-preview" alt="Screenshot Preview">
+        </div>
+        <div id="result-container" class="hidden">
+            <h2>QR Code Content</h2>
+            <div id="qr-result" class="result-box"></div>
+            <div class="action-buttons">
+                <button id="copy-btn" class="secondary-btn">
+                    <span class="icon">📋</span>
+                    Copy to Clipboard
+                </button>
+                <button id="open-link-btn" class="secondary-btn hidden">
+                    <span class="icon">🔗</span>
+                    Open Link
+                </button>
+            </div>
+        </div>
+        <div id="status" class="status-text"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
