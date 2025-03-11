@@ -33,8 +33,8 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.action === 'captureArea') {
         captureAndProcessArea(message.rect, sender.tab);
     }
-    if (message.action === 'processImage') {
-        processImage(sender.tab);
+    if (message.action === 'processImageForQRCode') {
+        processImageForQRCode(sender.tab);
     }
 });
 
@@ -91,7 +91,7 @@ function captureAndProcessArea(rect, tab) {
     });
 }
 
-function processImage(tab) {
+function processImageForQRCode(tab) {
     chrome.storage.local.get('lastCapturedImage', (result) => {
         const imageUrl = result.lastCapturedImage;
         console.log('Processing image:', imageUrl);
