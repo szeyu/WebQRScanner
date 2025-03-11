@@ -4,6 +4,8 @@
 
 WebQRScanner is a lightweight Chrome extension that streamlines the process of scanning QR codes found on web pages. Instead of taking screenshots, switching to a QR scanner app, or using your phone to scan your computer screen, WebQRScanner allows you to select any area of a webpage containing a QR code and instantly scan it.
 
+![Drawing selection area](assets/drawScreenshot.png)
+
 ## Features
 
 - **Area Selection**: Precisely select the area of the webpage containing the QR code
@@ -17,8 +19,16 @@ WebQRScanner is a lightweight Chrome extension that streamlines the process of s
 1. Click the WebQRScanner icon in your browser toolbar
 2. Select "Select Area to Scan" button
 3. Draw a rectangle around the QR code on the webpage
+   ![Drawing selection area](assets/drawScreenshot.png)
 4. The extension automatically captures, processes, and scans the selected area
 5. View the QR code content and take action (copy or open URL)
+   ![QR code result](assets/wikipediaQR_result.png)
+
+## Extension Interface
+
+The extension provides a clean, intuitive interface for scanning QR codes and viewing results:
+
+![Extension popup](assets/popup.png)
 
 ## Technical Details
 
