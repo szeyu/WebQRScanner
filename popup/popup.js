@@ -99,7 +99,7 @@ class PopupManager {
         try {
             // Send the image to the background script with the selected prompt
             chrome.runtime.sendMessage({
-                action: 'processImage',
+                action: 'processImageForQRCode',
             });
 
             // Wait for the processing to complete
